@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Minha Rotina | GlowCare</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Ajuste o caminho caso seu CSS esteja em outra pasta -->
+    <script src="rotina.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topo">
+        <h1 class="logo">GlowCare</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="dicas.html">Dicas</a>
+        </nav>
+    </header>
+    <div id="areaUsuario" hidden>
+        <span id="nomeUsuario"></span>
+        <button type="button" id="botaoSair">Sair da conta</button>
+    </div>
+    
+    <a href="login.html" id="linkLogin">Entrar</a>
+    
+    <script src="sessao.js" defer></script>
+
+    <main class="rotina-area">
+
+        <section class="caixa-rotina">
+
+            <h1 id="boasVindas">Bem-vinda! 💜</h1>
+
+            <p>
+                Vamos conhecer um pouquinho sobre sua pele
+                para criar uma rotina especial para você.
+            </p>
+
+            <div class="progresso">
+                <div id="barraProgresso"></div>
+            </div>
+
+            <span id="numeroPergunta">Pergunta 1 de 5</span>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="opcoes"></div>
+
+            <div class="botoes-rotina">
+                <button id="voltar" type="button">Voltar</button>
+                <button id="proximo" type="button">Próximo</button>
+            </div>
+
+            <div id="resultado" hidden></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>GlowCare © 2026 | Cuide de você 💜</p>
+    </footer>
+
+</body>
+</html>

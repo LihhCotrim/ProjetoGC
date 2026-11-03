@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Glow Care | Cadastro</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="imagens/icone.png">
+
+</head>
+
+
+<body>
+
+
+<header class="topo">
+
+<div class="logo">
+Glow Care
+</div>
+
+<nav>
+
+<a href="index.html">Página inicial</a>
+<a href="dicas.html">Dicas</a>
+<a href="produtos.html">Produtos</a>
+
+</nav>
+
+</header>
+<div id="areaUsuario" hidden>
+    <span id="nomeUsuario"></span>
+    <button type="button" id="botaoSair">Sair da conta</button>
+</div>
+
+<a href="login.html" id="linkLogin">Entrar</a>
+
+<script src="sessao.js" defer></script>
+
+
+<main>
+
+<section class="login-area">
+
+
+<div class="caixa-login">
+
+
+<h1>
+Crie sua conta
+</h1>
+
+
+<p>
+Faça parte da Glow Care
+</p>
+
+
+
+<form onsubmit="cadastrar(); return false; ">
+
+
+<label>
+Nome
+</label>
+
+<input id="nome" type="text" placeholder="Digite seu nome" oninput="formatarNome(this)">
+
+
+<label>
+Email
+</label>
+
+<input id="email" type="email" placeholder="Digite seu email" required>
+
+
+<label>
+Senha
+</label>
+
+<input id="senha" type="password" placeholder="Crie uma senha">
+
+
+<button
+onclick="cadastrar()">Cadastrar</button>
+
+
+<p>
+Já possui conta?
+<a href="login.html">
+Entrar
+</a>
+</p>
+
+
+</form>
+
+
+</div>
+
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+<p>
+Glow Care © 2026
+</p>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow Care | Meu Cronograma</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="imagens/icone.png">
+
+    <script src="cronograma.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topo">
+        <div class="logo">Glow Care</div>
+
+        <nav aria-label="Navegação principal">
+            <a href="index.html">Página inicial</a>
+            <a href="dicas.html">Dicas</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="rotina.html">Minha rotina</a>
+        </nav>
+    </header>
+    <div id="areaUsuario" hidden>
+        <span id="nomeUsuario"></span>
+        <button type="button" id="botaoSair">Sair da conta</button>
+    </div>
+    
+    <a href="login.html" id="linkLogin">Entrar</a>
+    
+    <script src="sessao.js" defer></script>
+
+    <main>
+        <section class="titulo-produtos">
+            <h1 id="tituloCronograma">Seu cronograma de skincare 💜</h1>
+
+            <p id="introducaoCronograma">
+                Estamos preparando sua rotina personalizada.
+            </p>
+        </section>
+
+        <section
+            id="resumoCronograma"
+            aria-label="Resumo da rotina"
+            aria-live="polite">
+        </section>
+
+        <section
+            id="rotinaManha"
+            aria-label="Rotina da manhã"
+            aria-live="polite">
+        </section>
+
+        <section
+            id="rotinaNoite"
+            aria-label="Rotina da noite"
+            aria-live="polite">
+        </section>
+
+        <section
+            id="avisosCronograma"
+            aria-label="Orientações importantes"
+            aria-live="polite">
+        </section>
+
+        <section class="acoes-cronograma">
+            <button type="button" id="refazerRotina">
+                Refazer questionário
+            </button>
+
+            <a href="produtos.html">
+                Conhecer os produtos
+            </a>
+
+            <a href="dicas.html">
+                Ver dicas de skincare
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Glow Care © 2026</p>
+        <p>Cuide da sua pele com informação e carinho. 💜</p>
+    </footer>
+
+</body> 
+</html>
