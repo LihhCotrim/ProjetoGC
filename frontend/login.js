@@ -31,6 +31,7 @@ async function login() {
         }
 
         // Salva os dados do usuário no navegador
+        // Comentário para ver no código
         localStorage.setItem(
             "usuario",
             JSON.stringify(dados.usuario)
